@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "siteName": "XeetLoot",
+    "ogDescription": "Unduh video, GIF, foto, dan audio MP3 dari Twitter (X). Gratis, tanpa login, tanpa watermark."
+  },
+  "nav": {
+    "mainLabel": "Menu utama",
+    "video": "Video",
+    "gif": "GIF",
+    "image": "Gambar",
+    "mp3": "MP3",
+    "langLabel": "Bahasa Indonesia",
+    "langLabelShort": "ID",
+    "langAria": "Bahasa: Indonesia",
+    "themeToLight": "Ganti ke tema terang",
+    "themeToDark": "Ganti ke tema gelap",
+    "homeAria": "Beranda XeetLoot"
+  },
+  "modes": {
+    "video": {
+      "title": "Pengunduh Video Twitter – Unduh Video Twitter (X) dalam HD MP4 | XeetLoot",
+      "description": "Pengunduh video Twitter (X) gratis. Tempel tautan tweet dan simpan videonya dalam MP4, hingga 1080p. Tanpa login, tanpa watermark.",
+      "h1a": "Pengunduh ",
+      "h1b": "Video",
+      "h1c": " Twitter (X)",
+      "sub": "Tempel tautan tweet dan simpan video, GIF, foto, atau audionya. Gratis, tanpa login.",
+      "howTitle": "Unduh video Twitter dalam 3 langkah"
+    },
+    "gif": {
+      "title": "Pengunduh GIF Twitter – Simpan GIF Twitter (X) sebagai .GIF Asli | XeetLoot",
+      "description": "Simpan GIF apa pun dari tweet sebagai file .gif asli, atau sebagai MP4 yang lebih ringan. Pengunduh GIF Twitter (X) gratis, tanpa login.",
+      "h1a": "Pengunduh ",
+      "h1b": "GIF",
+      "h1c": " Twitter (X)",
+      "sub": "Simpan GIF apa pun dari tweet sebagai .gif asli, atau sebagai MP4 yang lebih ringan. Gratis, tanpa login.",
+      "howTitle": "Unduh GIF Twitter dalam 3 langkah"
+    },
+    "image": {
+      "title": "Pengunduh Gambar Twitter – Simpan Foto Twitter (X) dalam Ukuran Asli | XeetLoot",
+      "description": "Simpan semua foto dari sebuah tweet dalam kualitas aslinya. Pengunduh gambar Twitter (X) gratis, tanpa login.",
+      "h1a": "Pengunduh ",
+      "h1b": "Gambar",
+      "h1c": " Twitter (X)",
+      "sub": "Simpan semua foto dari sebuah tweet dalam kualitas aslinya. Gratis, tanpa login.",
+      "howTitle": "Unduh foto Twitter dalam 3 langkah"
+    },
+    "mp3": {
+      "title": "Twitter ke MP3 – Ambil Audio dari Video Twitter (X) | XeetLoot",
+      "description": "Ambil audio dari video tweet apa pun dan simpan sebagai MP3. Konverter Twitter (X) ke MP3 gratis, tanpa login.",
+      "h1a": "Twitter (X) ke ",
+      "h1b": "MP3",
+      "h1c": "",
+      "sub": "Ambil audio dari video tweet apa pun dan simpan sebagai MP3. Gratis, tanpa login.",
+      "howTitle": "Ubah tweet jadi MP3 dalam 3 langkah"
+    }
+  },
+  "home": {
+    "fmtNav": "Jenis unduhan",
+    "inputLabel": "Tautan tweet",
+    "placeholder": "Tempel tautan tweet — x.com/… atau twitter.com/…",
+    "paste": "Tempel",
+    "download": "Unduh",
+    "clear": "Hapus tautan",
+    "sample": "Coba tautan contoh",
+    "trustLabel": "Mengapa XeetLoot",
+    "chips": [
+      "Gratis",
+      "Tanpa login",
+      "Tanpa watermark"
+    ],
+    "toast": "Tautan ditempel dari clipboard",
+    "results": "Opsi unduhan",
+    "qualities": "Kualitas",
+    "preview": "Putar pratinjau",
+    "multiVideos": "{count} video dalam tweet ini",
+    "downloadAllVideos": "Unduh semua ({count})",
+    "photosInTweet": "{count} foto dalam tweet ini",
+    "origQuality": "Kualitas asli",
+    "downloadAllPhotos": "Unduh semua ({count})",
+    "dl": "Unduh",
+    "again": "Unduh yang lain",
+    "readFaq": "Baca FAQ",
+    "loadingTitle": "Mengambil loot dari tweet…",
+    "loadingDesc": "Biasanya butuh beberapa detik.",
+    "ad": "Iklan",
+    "adAria": "Iklan",
+    "closeLang": "Tutup pemilih bahasa",
+    "howEyebrow": "Cara kerjanya",
+    "step1Title": "Salin tautannya",
+    "step1Desc": "Di tweet, ketuk Bagikan, lalu Salin tautan.",
+    "step2Title": "Tempel di sini",
+    "step2Desc": "Ketuk Tempel, atau tekan lama kotaknya.",
+    "step3Title": "Ambil lootmu",
+    "step3Desc": "Pilih kualitas dan ketuk Unduh.",
+    "featEyebrow": "Apa yang bisa kamu simpan",
+    "featTitle": "Semua isi tweet, cuma satu ketukan",
+    "feat1Title": "MP4 hingga 1080p",
+    "feat1Desc": "Semua kualitas yang ditawarkan tweet, termasuk HD.",
+    "feat2Title": "GIF jadi .gif asli",
+    "feat2Desc": "X menyimpan GIF sebagai MP4. Kami ubah kembali jadi GIF.",
+    "feat3Title": "Foto ukuran asli",
+    "feat3Desc": "JPG resolusi penuh, bukan pratinjau yang dikompres.",
+    "feat4Title": "Audio MP3",
+    "feat4Desc": "Cuma suaranya saja, buat klip, podcast, dan meme.",
+    "feat5Title": "Tweet dengan banyak video",
+    "feat5Desc": "Ada beberapa video atau foto? Ambil semuanya sekaligus.",
+    "feat6Title": "x.com dan twitter.com",
+    "feat6Desc": "Kedua jenis tautan ini bisa dipakai, termasuk tautan dari HP.",
+    "trickEyebrow": "Trik cepat",
+    "trickTitle": "Trik di bilah alamat",
+    "trickBody": "Sedang lihat tweet di browser? Ganti x.com dengan xeetloot.com di bilah alamat, lalu tekan Enter. Kamu langsung sampai di halaman unduhan.",
+    "trickNote": "Tautan twitter.com juga bekerja dengan cara yang sama.",
+    "trickBefore": "Sebelum",
+    "trickAfter": "Sesudah",
+    "faqTitle": "Pertanyaan",
+    "legalTitle": "Gunakan dengan wajar",
+    "legalBody": "Unduh hanya yang memang berhak kamu gunakan. XeetLoot tidak berafiliasi dengan X Corp. Kami tidak menyimpan file; unduhan langsung berasal dari server X.",
+    "dmcaLink": "DMCA & ketentuan"
+  },
+  "errors": {
+    "unrecognized_url": {
+      "title": "Tautan tidak dikenali",
+      "desc": "Tautan tweet biasanya seperti ini: x.com/namapengguna/status/1234567890. Salin lagi lewat Bagikan › Salin tautan, lalu tempel ulang.",
+      "action": "Tempel lagi"
+    },
+    "protected_account": {
+      "title": "Akun ini privat",
+      "desc": "Hanya pengikut yang disetujui yang bisa melihat tweet ini, jadi kami juga tidak bisa mengaksesnya. Tweet publik bisa diunduh tanpa masalah.",
+      "action": "Coba tautan lain"
+    },
+    "age_restricted": {
+      "title": "Postingan dengan batasan usia",
+      "desc": "X hanya menampilkan postingan ini ke pengguna dewasa yang sudah login, jadi tidak bisa diunduh tanpa login — dan kami tidak pernah meminta kamu login.",
+      "action": "Coba tautan lain"
+    },
+    "spaces_unsupported": {
+      "title": "Spaces tidak didukung",
+      "desc": "Audio Twitter Spaces membutuhkan sesi langsung dan harus login — jadi tidak ada file yang bisa diunduh.",
+      "action": "Coba tautan lain"
+    },
+    "not_found": {
+      "title": "Tweet tidak ditemukan",
+      "desc": "Tweet ini mungkin sudah dihapus, atau tautannya tidak lengkap.",
+      "action": "Coba tautan lain"
+    },
+    "rate_limited": {
+      "title": "Terlalu banyak permintaan",
+      "desc": "Kamu sudah mencapai batas permintaan kami. Tunggu semenit lalu coba lagi.",
+      "action": "Coba lagi"
+    },
+    "unavailable": {
+      "title": "Layanan sementara tidak tersedia — coba lagi",
+      "desc": "X sedang lambat merespons saat ini. Tautanmu sudah benar; coba lagi sebentar lagi.",
+      "action": "Coba lagi"
+    },
+    "turnstile_failed": {
+      "title": "Verifikasi gagal",
+      "desc": "Pemeriksaan bot kami tidak dapat mengonfirmasi bahwa Anda manusia. Coba lagi.",
+      "action": "Coba lagi"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Bisakah saya mengunduh dari akun privat?",
+        "a": "Tidak. Jika sebuah tweet hanya bisa dilihat oleh pengikut akun tersebut, kami juga tidak bisa melihatnya. Hanya tweet publik."
+      },
+      {
+        "q": "Bagaimana cara mengunduh di iPhone?",
+        "a": "Salin tautan tweet di aplikasi X, buka xeetloot.com di Safari, tempel lalu ketuk Unduh. File akan masuk ke Files › Downloads.",
+        "link": "Panduan lengkap iPhone →",
+        "href": "iphone"
+      },
+      {
+        "q": "Bagaimana di Android?",
+        "a": "Salin tautannya, tempel di sini lewat Chrome, lalu ketuk Unduh. Videonya masuk ke Downloads dan muncul di galeri.",
+        "link": "Panduan lengkap Android →",
+        "href": "android"
+      },
+      {
+        "q": "Apakah ada batasnya?",
+        "a": "Tidak ada batas harian dan tidak ada batas jumlah file yang bisa disimpan. Video yang sangat panjang mungkin butuh beberapa detik ekstra untuk disiapkan."
+      },
+      {
+        "q": "Apakah bekerja dengan tautan x.com?",
+        "a": "Ya. x.com, twitter.com, mobile.twitter.com, dan tautan yang dibagikan dari aplikasi semuanya bisa dipakai."
+      },
+      {
+        "q": "Apakah saya perlu akun?",
+        "a": "Tidak. Tanpa daftar, tanpa login, tanpa perlu menginstal aplikasi apa pun."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Ambil lootnya, lupakan sisanya. Pengunduh gratis video, GIF, foto, dan MP3 dari Twitter (X).",
+    "copy": "© 2026 XeetLoot · Tidak berafiliasi dengan X Corp. atau Twitter.",
+    "made": "Dibuat untuk jempol yang cepat.",
+    "toolsGroup": "Alat",
+    "toolVideo": "Pengunduh video",
+    "toolGif": "Pengunduh GIF",
+    "toolImage": "Pengunduh gambar",
+    "toolMp3": "Twitter ke MP3",
+    "guidesGroup": "Panduan",
+    "guideIos": "Di iPhone",
+    "guideAndroid": "Di Android",
+    "legalGroup": "Legal",
+    "legalPrivacy": "Privasi",
+    "legalTerms": "Ketentuan",
+    "legalDmca": "DMCA",
+    "legalContact": "Kontak",
+    "sistersGroup": "Situs saudara",
+    "sisterPinterest": "Pengunduh Pinterest"
+  },
+  "langPicker": {
+    "title": "Pilih bahasa",
+    "close": "Tutup",
+    "search": "Cari bahasa",
+    "none": "Tidak ada bahasa yang cocok."
+  },
+  "guides": {
+    "iphone": {
+      "title": "Cara mengunduh video Twitter (X) di iPhone",
+      "description": "Panduan langkah demi langkah menyimpan video, GIF, dan foto Twitter (X) di iPhone menggunakan Safari. Tidak perlu aplikasi.",
+      "intro": "Tanpa aplikasi, tanpa login — cukup Safari dan aplikasi Files yang sudah kamu punya.",
+      "steps": [
+        {
+          "title": "Salin tautan tweetnya",
+          "desc": "Di aplikasi X atau Safari, ketuk ikon Bagikan di tweet, lalu ketuk Salin tautan."
+        },
+        {
+          "title": "Buka XeetLoot di Safari",
+          "desc": "Kunjungi xeetloot.com, atau cukup ganti x.com dengan xeetloot.com di bilah alamat tab yang sudah terbuka."
+        },
+        {
+          "title": "Tempel dan unduh",
+          "desc": "Ketuk tombol Tempel (atau tekan lama kotak input dan pilih Tempel), lalu ketuk Unduh dan pilih kualitas."
+        },
+        {
+          "title": "Temukan filemu",
+          "desc": "iOS menyimpannya di Files › Downloads. Video juga punya opsi “Simpan Video” langsung ke Photos lewat menu bagikan."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Apakah saya perlu menginstal aplikasi?",
+            "a": "Tidak — xeetloot.com langsung berfungsi di Safari. Tidak ada yang perlu diinstal dari App Store."
+          },
+          {
+            "q": "Video yang diunduh di iPhone tersimpan di mana?",
+            "a": "Di aplikasi Files, folder Downloads. Video juga punya opsi \"Save Video\" langsung ke Photos."
+          },
+          {
+            "q": "Apakah ini juga berfungsi di browser iPhone lain?",
+            "a": "Ya — Chrome, Firefox, dan browser iOS lainnya berfungsi sama seperti Safari."
+          }
+        ]
+      }
+    },
+    "android": {
+      "title": "Cara mengunduh video Twitter (X) di Android",
+      "description": "Panduan langkah demi langkah menyimpan video, GIF, dan foto Twitter (X) di Android menggunakan Chrome. Tidak perlu aplikasi.",
+      "intro": "Berfungsi di Chrome, Samsung Internet, atau browser Android lainnya.",
+      "steps": [
+        {
+          "title": "Salin tautan tweetnya",
+          "desc": "Di aplikasi X, ketuk ikon bagikan pada tweet dan pilih Salin tautan."
+        },
+        {
+          "title": "Buka XeetLoot",
+          "desc": "Buka xeetloot.com di browser kamu, atau ganti x.com dengan xeetloot.com di bilah alamat."
+        },
+        {
+          "title": "Tempel dan unduh",
+          "desc": "Ketuk Tempel, lalu Unduh, lalu pilih kualitas."
+        },
+        {
+          "title": "Temukan filemu",
+          "desc": "Android menyimpannya di folder Downloads, dan videonya otomatis muncul di aplikasi galeri."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Apakah saya perlu menginstal aplikasi?",
+            "a": "Tidak — xeetloot.com langsung berfungsi di Chrome. Tidak ada yang perlu diinstal dari Play Store."
+          },
+          {
+            "q": "Video yang diunduh di Android tersimpan di mana?",
+            "a": "Di folder Downloads, dan video juga otomatis muncul di aplikasi galeri."
+          },
+          {
+            "q": "Apakah ini juga berfungsi di browser Android lain?",
+            "a": "Ya — Samsung Internet, Firefox, dan browser Android lainnya berfungsi sama seperti Chrome."
+          }
+        ]
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "updated": "Terakhir diperbarui: 22 Oktober 2026",
+      "body": [
+        {
+          "h": "Apa yang kami kumpulkan",
+          "p": "XeetLoot tidak memerlukan akun. Saat kamu memproses tautan tweet, kami sementara memproses URL yang kamu tempel dan menyimpan tautan unduhan hasilnya dalam cache hingga 24 jam, agar tidak membebani server X dengan tweet yang sama berulang kali. Kami tidak menyimpan isi tweet lebih lama dari jangka waktu cache tersebut."
+        },
+        {
+          "h": "Log dan pencegahan penyalahgunaan",
+          "p": "Seperti kebanyakan layanan web, penyedia infrastruktur kami (Cloudflare) memproses metadata koneksi (alamat IP, waktu permintaan) untuk menjalankan pembatasan laju dan mencegah penyalahgunaan. Kami tidak menjual data ini."
+        },
+        {
+          "h": "Cookie",
+          "p": "Kami menggunakan verifikasi anti-bot (Cloudflare Turnstile) sebelum memproses tautan, yang mungkin membuat cookie berumur pendek. Kami tidak menggunakan cookie iklan atau pelacakan milik kami sendiri."
+        },
+        {
+          "h": "Pihak ketiga",
+          "p": "Unduhan disajikan langsung dari server X sendiri (video.twimg.com, pbs.twimg.com) — kami tidak menyimpan atau meng-hosting ulang file media, kecuali file hasil konversi berumur pendek (GIF/MP3) yang otomatis terhapus dalam satu jam."
+        },
+        {
+          "h": "Kontak",
+          "p": "Ada pertanyaan soal kebijakan ini? Lihat halaman Kontak."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Ketentuan Layanan",
+      "updated": "Terakhir diperbarui: 22 Oktober 2026",
+      "body": [
+        {
+          "h": "Layanan ini",
+          "p": "XeetLoot memungkinkan kamu mengunduh media yang tersedia untuk publik dari postingan X (Twitter) untuk penggunaan pribadi. Kami tidak berafiliasi, didukung, atau disponsori oleh X Corp."
+        },
+        {
+          "h": "Penggunaan yang wajar",
+          "p": "Unduh hanya konten yang memang berhak kamu gunakan. Jangan gunakan XeetLoot untuk melanggar hak cipta, melakukan pelecehan, atau mendistribusikan ulang konten orang lain tanpa izin. Kami berhak memblokir trafik yang disalahgunakan."
+        },
+        {
+          "h": "Tanpa garansi",
+          "p": "Layanan disediakan “apa adanya”. X dapat mengubah sistemnya sewaktu-waktu, yang dapat mengganggu proses pemrosesan atau pengunduhan tanpa pemberitahuan. Kami tidak menjamin waktu aktif atau ketersediaan layanan."
+        },
+        {
+          "h": "Batasan tanggung jawab",
+          "p": "XeetLoot tidak bertanggung jawab atas bagaimana konten yang diunduh digunakan setelah meninggalkan layanan kami."
+        },
+        {
+          "h": "Perubahan",
+          "p": "Kami dapat memperbarui ketentuan ini; penggunaan yang berlanjut setelah perubahan berarti kamu menerima perubahan tersebut."
+        }
+      ]
+    },
+    "dmca": {
+      "title": "Kebijakan DMCA",
+      "updated": "Terakhir diperbarui: 22 Oktober 2026",
+      "body": [
+        {
+          "h": "Permintaan penghapusan",
+          "p": "XeetLoot tidak menyimpan atau meng-hosting media dalam jangka panjang — setiap unduhan disajikan langsung dari server X, atau merupakan file hasil konversi berumur pendek (1 jam). Jika kamu yakin karya berhak ciptamu tersedia melalui XeetLoot dengan cara yang melanggar hakmu, hubungi kami dengan:"
+        },
+        {
+          "h": "Yang harus disertakan",
+          "p": "(1) Deskripsi karya berhak cipta; (2) URL tweet spesifik yang terlibat; (3) informasi kontakmu; (4) pernyataan bahwa kamu meyakini dengan jujur bahwa penggunaannya tidak sah; (5) pernyataan, dengan ancaman hukum atas keterangan palsu, bahwa informasi tersebut akurat dan kamu berwenang untuk bertindak."
+        },
+        {
+          "h": "Cara mengirimkannya",
+          "p": "Kirim email ke alamat di halaman Kontak dengan subjek “DMCA Notice”. Kami merespons pemberitahuan yang valid dengan cepat."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontak",
+      "intro": "Ada pertanyaan, pemberitahuan DMCA, atau sesuatu yang rusak? Hubungi kami di:",
+      "email": "contact@xeetloot.com",
+      "note": "Kami membaca semuanya, tapi karena tim kami kecil, kami tidak selalu bisa membalas setiap pesan satu per satu."
+    }
+  }
+}

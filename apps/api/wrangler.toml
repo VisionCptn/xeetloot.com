@@ -1,0 +1,82 @@
+name = "loot-api"
+main = "src/index.ts"
+compatibility_date = "2026-10-22"
+
+routes = [{ pattern = "api.xeetloot.com", custom_domain = true }]
+
+# --- KV ---------------------------------------------------------------
+[[kv_namespaces]]
+binding = "RESOLVE_CACHE"
+id = "510c1c8c967b4b81abc5a401ae03510a"
+
+[[kv_namespaces]]
+binding = "BREAKER_STATE"
+id = "4c772f5b3280444eb070587582ae5412"
+
+[[kv_namespaces]]
+binding = "CANARY_STATE"
+id = "dd15899ef294499ab573cb06cb084bcd"
+
+# --- R2 -----------------------------------------------------------------
+# Holds /convert output (gif/mp3/remux) uploaded by the extractor. Lifecycle
+# rule (delete after 1h) is configured on the bucket itself — see
+# apps/extractor/README.md.
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "xeetloot-media"
+
+# --- Rate limiting --------------------------------------------------------
+# One binding per axis (brief: "per IP (30/min) + per site"). `period` only
+# accepts 10 or 60. Enforcement is per-Cloudflare-location, not global, so
+# treat these as approximate under real distributed traffic — exact under
+# `wrangler dev`'s single simulated location, which is what the Phase 1/DoD
+# "31st request gets 429" check relies on.
+[[ratelimits]]
+name = "RATE_LIMIT_IP"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }
+
+[[ratelimits]]
+name = "RATE_LIMIT_SITE"
+namespace_id = "1002"
+simple = { limit = 300, period = 60 }
+
+# --- Extractor container ---------------------------------------------------
+# yt-dlp + ffmpeg, called for syndication-tier misses (tier 2) and for
+# /convert (gif/mp3/remux). Runs as a Cloudflare Container, not a VPS — see
+# apps/extractor/.
+[[containers]]
+class_name = "ExtractContainer"
+image = "../extractor/Dockerfile"
+max_instances = 5
+instance_type = "lite"
+
+[[durable_objects.bindings]]
+name = "EXTRACT_CONTAINER"
+class_name = "ExtractContainer"
+
+[exports.ExtractContainer]
+type = "durable-object"
+storage = "sqlite"
+
+# --- Cron --------------------------------------------------------------
+# :00/:15/:30/:45 — canary resolve of 3 fixture tweets (video/gif/photo).
+# 03:00 — nightly extractor self-update.
+[triggers]
+crons = ["*/15 * * * *", "0 3 * * *"]
+
+# --- Vars (non-secret) ---------------------------------------------------
+[vars]
+SITE = "xeetloot"
+# Set these to tweets you control (so they never 404 on their own) once you
+# have a test account — see apps/api/README.md.
+CANARY_VIDEO_URL = "https://x.com/jack/status/20"
+CANARY_GIF_URL = "https://x.com/jack/status/20"
+CANARY_PHOTO_URL = "https://x.com/jack/status/20"
+
+# --- Secrets (set via `wrangler secret put`, never committed) ------------
+# TURNSTILE_SECRET_KEY
+# DL_HMAC_SECRET      — signs/verifies /dl and /convert download links
+# EXTRACTOR_SECRET    — shared "x-secret" header value, also set on the
+#                        extractor container's own env
+# STATUS_SECRET       — query-param key gating GET /status (?key=...)

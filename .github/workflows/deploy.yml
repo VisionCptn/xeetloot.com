@@ -1,0 +1,80 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: false
+
+jobs:
+  deploy-api:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # `wrangler deploy` here also builds and uploads the extractor's
+      # Docker image to Cloudflare itself (it's declared as a
+      # `[[containers]]` binding in apps/api/wrangler.toml) — there's no
+      # separate registry push step for it.
+      - name: Deploy loot-api
+        working-directory: apps/api
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+  deploy-web:
+    needs: deploy-api
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # NEXT_PUBLIC_* vars are inlined into the client bundle at build
+      # time — they must be real env vars here, not just wrangler.jsonc
+      # `vars` (those are runtime-only). None of these are secret: the
+      # Turnstile site key is public by design, the API base URL and ads
+      # provider name are just plain strings.
+      - name: Build
+        working-directory: apps/web
+        run: npx opennextjs-cloudflare build
+        env:
+          NEXT_PUBLIC_API_BASE_URL: ${{ vars.NEXT_PUBLIC_API_BASE_URL || 'https://api.xeetloot.com' }}
+          NEXT_PUBLIC_ADS_PROVIDER: ${{ vars.NEXT_PUBLIC_ADS_PROVIDER || 'none' }}
+          NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.NEXT_PUBLIC_TURNSTILE_SITE_KEY }}
+          NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
+          NEXT_PUBLIC_CLARITY_ID: ${{ vars.NEXT_PUBLIC_CLARITY_ID }}
+
+      - name: Deploy web
+        working-directory: apps/web
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

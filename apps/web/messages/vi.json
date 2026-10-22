@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "siteName": "XeetLoot",
+    "ogDescription": "Tải video, GIF, ảnh và âm thanh MP3 từ Twitter (X). Miễn phí, không cần đăng nhập, không watermark."
+  },
+  "nav": {
+    "mainLabel": "Menu chính",
+    "video": "Video",
+    "gif": "GIF",
+    "image": "Ảnh",
+    "mp3": "MP3",
+    "langLabel": "Tiếng Việt",
+    "langLabelShort": "VI",
+    "langAria": "Ngôn ngữ: Tiếng Việt",
+    "themeToLight": "Chuyển sang giao diện sáng",
+    "themeToDark": "Chuyển sang giao diện tối",
+    "homeAria": "Trang chủ XeetLoot"
+  },
+  "modes": {
+    "video": {
+      "title": "Tải Video Twitter – Tải Video Twitter (X) HD MP4 | XeetLoot",
+      "description": "Công cụ tải video Twitter (X) miễn phí. Dán liên kết tweet và lưu video dưới dạng MP4, tối đa 1080p. Không cần đăng nhập, không watermark.",
+      "h1a": "Tải ",
+      "h1b": "Video",
+      "h1c": " Twitter (X)",
+      "sub": "Dán liên kết tweet và lưu video, GIF, ảnh hoặc âm thanh. Miễn phí, không cần đăng nhập.",
+      "howTitle": "Tải video Twitter chỉ trong 3 bước"
+    },
+    "gif": {
+      "title": "Tải GIF Twitter – Lưu GIF Twitter (X) Dưới Dạng .GIF Thật | XeetLoot",
+      "description": "Lưu bất kỳ GIF nào từ tweet thành file .gif thật, hoặc MP4 nhẹ hơn. Công cụ tải GIF Twitter (X) miễn phí, không cần đăng nhập.",
+      "h1a": "Tải ",
+      "h1b": "GIF",
+      "h1c": " Twitter (X)",
+      "sub": "Lưu bất kỳ GIF nào từ tweet thành .gif thật, hoặc MP4 nhẹ hơn. Miễn phí, không cần đăng nhập.",
+      "howTitle": "Tải GIF Twitter chỉ trong 3 bước"
+    },
+    "image": {
+      "title": "Tải Ảnh Twitter – Lưu Ảnh Twitter (X) Với Kích Thước Gốc | XeetLoot",
+      "description": "Lưu toàn bộ ảnh trong một tweet với chất lượng gốc. Công cụ tải ảnh Twitter (X) miễn phí, không cần đăng nhập.",
+      "h1a": "Tải ",
+      "h1b": "Ảnh",
+      "h1c": " Twitter (X)",
+      "sub": "Lưu toàn bộ ảnh trong một tweet với chất lượng gốc. Miễn phí, không cần đăng nhập.",
+      "howTitle": "Tải ảnh Twitter chỉ trong 3 bước"
+    },
+    "mp3": {
+      "title": "Twitter sang MP3 – Trích Xuất Âm Thanh Từ Video Twitter (X) | XeetLoot",
+      "description": "Trích xuất âm thanh từ bất kỳ video tweet nào và lưu thành MP3. Công cụ chuyển Twitter (X) sang MP3 miễn phí, không cần đăng nhập.",
+      "h1a": "Twitter (X) sang ",
+      "h1b": "MP3",
+      "h1c": "",
+      "sub": "Trích xuất âm thanh từ bất kỳ video tweet nào và lưu thành MP3. Miễn phí, không cần đăng nhập.",
+      "howTitle": "Biến tweet thành MP3 chỉ trong 3 bước"
+    }
+  },
+  "home": {
+    "fmtNav": "Loại tải xuống",
+    "inputLabel": "Liên kết tweet",
+    "placeholder": "Dán liên kết tweet — x.com/… hoặc twitter.com/…",
+    "paste": "Dán",
+    "download": "Tải xuống",
+    "clear": "Xóa liên kết",
+    "sample": "Thử một liên kết mẫu",
+    "trustLabel": "Vì sao chọn XeetLoot",
+    "chips": [
+      "Miễn phí",
+      "Không cần đăng nhập",
+      "Không watermark"
+    ],
+    "toast": "Đã dán liên kết từ clipboard",
+    "results": "Tùy chọn tải xuống",
+    "qualities": "Chất lượng",
+    "preview": "Xem trước",
+    "multiVideos": "Tweet này có {count} video",
+    "downloadAllVideos": "Tải tất cả ({count})",
+    "photosInTweet": "Tweet này có {count} ảnh",
+    "origQuality": "Chất lượng gốc",
+    "downloadAllPhotos": "Tải tất cả ({count})",
+    "dl": "Tải xuống",
+    "again": "Tải cái khác",
+    "readFaq": "Đọc câu hỏi thường gặp",
+    "loadingTitle": "Đang gom loot từ tweet…",
+    "loadingDesc": "Thường chỉ mất vài giây.",
+    "ad": "Quảng cáo",
+    "adAria": "Quảng cáo",
+    "closeLang": "Đóng bộ chọn ngôn ngữ",
+    "howEyebrow": "Cách hoạt động",
+    "step1Title": "Sao chép liên kết",
+    "step1Desc": "Trên tweet, nhấn Chia sẻ, sau đó chọn Sao chép liên kết.",
+    "step2Title": "Dán vào đây",
+    "step2Desc": "Nhấn Dán, hoặc nhấn giữ vào ô nhập.",
+    "step3Title": "Nhận loot của bạn",
+    "step3Desc": "Chọn chất lượng và nhấn Tải xuống.",
+    "featEyebrow": "Bạn có thể lưu gì",
+    "featTitle": "Mọi thứ trong tweet, chỉ một lần chạm",
+    "feat1Title": "MP4 lên đến 1080p",
+    "feat1Desc": "Mọi chất lượng mà tweet cung cấp, kể cả HD.",
+    "feat2Title": "GIF thành .gif thật",
+    "feat2Desc": "X lưu GIF dưới dạng MP4. Chúng tôi chuyển chúng trở lại thành GIF.",
+    "feat3Title": "Ảnh kích thước gốc",
+    "feat3Desc": "JPG độ phân giải đầy đủ, không phải ảnh xem trước bị nén.",
+    "feat4Title": "Âm thanh MP3",
+    "feat4Desc": "Chỉ lấy âm thanh, dùng cho clip, podcast và meme.",
+    "feat5Title": "Tweet nhiều video",
+    "feat5Desc": "Có nhiều video hoặc ảnh? Lấy tất cả cùng một lúc.",
+    "feat6Title": "x.com và twitter.com",
+    "feat6Desc": "Cả hai kiểu liên kết đều dùng được, kể cả liên kết từ điện thoại.",
+    "trickEyebrow": "Mẹo nhanh",
+    "trickTitle": "Mẹo đổi thanh địa chỉ",
+    "trickBody": "Đang xem một tweet trên trình duyệt? Đổi x.com thành xeetloot.com trên thanh địa chỉ rồi nhấn Enter. Bạn sẽ vào ngay trang tải xuống.",
+    "trickNote": "Liên kết twitter.com cũng hoạt động tương tự.",
+    "trickBefore": "Trước",
+    "trickAfter": "Sau",
+    "faqTitle": "Câu hỏi",
+    "legalTitle": "Dùng đúng cách",
+    "legalBody": "Chỉ tải những gì bạn có quyền sử dụng. XeetLoot không liên kết với X Corp. Chúng tôi không lưu trữ file; các bản tải xuống đến thẳng từ máy chủ của X.",
+    "dmcaLink": "DMCA & điều khoản"
+  },
+  "errors": {
+    "unrecognized_url": {
+      "title": "Không nhận diện được liên kết",
+      "desc": "Liên kết tweet có dạng: x.com/tên/status/1234567890. Hãy sao chép lại bằng Chia sẻ › Sao chép liên kết rồi dán lại.",
+      "action": "Dán lại"
+    },
+    "protected_account": {
+      "title": "Tài khoản này ở chế độ riêng tư",
+      "desc": "Chỉ người theo dõi được chấp thuận mới xem được tweet này, nên chúng tôi cũng không thể truy cập. Tweet công khai thì tải được bình thường.",
+      "action": "Thử liên kết khác"
+    },
+    "age_restricted": {
+      "title": "Bài viết giới hạn độ tuổi",
+      "desc": "X chỉ hiển thị bài viết này cho người lớn đã đăng nhập, nên không thể tải xuống nếu không đăng nhập — và chúng tôi không bao giờ yêu cầu bạn đăng nhập.",
+      "action": "Thử liên kết khác"
+    },
+    "spaces_unsupported": {
+      "title": "Không hỗ trợ Spaces",
+      "desc": "Âm thanh Twitter Spaces cần một phiên trực tiếp và đã đăng nhập — không có file nào để tải xuống.",
+      "action": "Thử liên kết khác"
+    },
+    "not_found": {
+      "title": "Không tìm thấy tweet",
+      "desc": "Tweet này có thể đã bị xóa, hoặc liên kết chưa đầy đủ.",
+      "action": "Thử liên kết khác"
+    },
+    "rate_limited": {
+      "title": "Quá nhiều yêu cầu",
+      "desc": "Bạn đã đạt giới hạn yêu cầu. Chờ một phút rồi thử lại.",
+      "action": "Thử lại"
+    },
+    "unavailable": {
+      "title": "Dịch vụ tạm thời không khả dụng — hãy thử lại",
+      "desc": "X đang phản hồi chậm vào lúc này. Liên kết của bạn không có vấn đề; hãy thử lại sau một chút.",
+      "action": "Thử lại"
+    },
+    "turnstile_failed": {
+      "title": "Xác minh không thành công",
+      "desc": "Hệ thống kiểm tra bot của chúng tôi không thể xác nhận bạn là con người. Hãy thử lại.",
+      "action": "Thử lại"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Tôi có thể tải từ tài khoản riêng tư không?",
+        "a": "Không. Nếu chỉ người theo dõi của một tài khoản mới xem được tweet, chúng tôi cũng không thể xem. Chỉ hoạt động với tweet công khai."
+      },
+      {
+        "q": "Làm sao để tải trên iPhone?",
+        "a": "Sao chép liên kết tweet trong ứng dụng X, mở xeetloot.com trên Safari, dán rồi nhấn Tải xuống. File sẽ nằm trong Files › Downloads.",
+        "link": "Xem hướng dẫn đầy đủ cho iPhone →",
+        "href": "iphone"
+      },
+      {
+        "q": "Trên Android thì sao?",
+        "a": "Sao chép liên kết, dán vào đây trên Chrome rồi nhấn Tải xuống. Video sẽ vào thư mục Downloads và xuất hiện trong thư viện ảnh của bạn.",
+        "link": "Xem hướng dẫn đầy đủ cho Android →",
+        "href": "android"
+      },
+      {
+        "q": "Có giới hạn nào không?",
+        "a": "Không có giới hạn hằng ngày và không giới hạn số file bạn có thể lưu. Video rất dài có thể cần thêm vài giây để xử lý."
+      },
+      {
+        "q": "Có hoạt động với liên kết x.com không?",
+        "a": "Có. x.com, twitter.com, mobile.twitter.com và liên kết chia sẻ từ ứng dụng đều hoạt động."
+      },
+      {
+        "q": "Tôi có cần tài khoản không?",
+        "a": "Không. Không cần đăng ký, không cần đăng nhập, không cần cài ứng dụng nào."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Lấy loot, bỏ lại phần còn lại. Công cụ tải video, GIF, ảnh và MP3 từ Twitter (X) miễn phí.",
+    "copy": "© 2026 XeetLoot · Không liên kết với X Corp. hoặc Twitter.",
+    "made": "Được tạo ra cho những ngón tay nhanh nhẹn.",
+    "toolsGroup": "Công cụ",
+    "toolVideo": "Tải video",
+    "toolGif": "Tải GIF",
+    "toolImage": "Tải ảnh",
+    "toolMp3": "Twitter sang MP3",
+    "guidesGroup": "Hướng dẫn",
+    "guideIos": "Trên iPhone",
+    "guideAndroid": "Trên Android",
+    "legalGroup": "Pháp lý",
+    "legalPrivacy": "Quyền riêng tư",
+    "legalTerms": "Điều khoản",
+    "legalDmca": "DMCA",
+    "legalContact": "Liên hệ",
+    "sistersGroup": "Trang web liên kết",
+    "sisterPinterest": "Công cụ tải Pinterest"
+  },
+  "langPicker": {
+    "title": "Chọn ngôn ngữ",
+    "close": "Đóng",
+    "search": "Tìm ngôn ngữ",
+    "none": "Không có ngôn ngữ nào khớp."
+  },
+  "guides": {
+    "iphone": {
+      "title": "Cách tải video Twitter (X) trên iPhone",
+      "description": "Hướng dẫn từng bước lưu video, GIF và ảnh Twitter (X) trên iPhone bằng Safari. Không cần ứng dụng.",
+      "intro": "Không cần ứng dụng, không cần đăng nhập — chỉ cần Safari và ứng dụng Files bạn đã có sẵn.",
+      "steps": [
+        {
+          "title": "Sao chép liên kết tweet",
+          "desc": "Trong ứng dụng X hoặc Safari, nhấn biểu tượng Chia sẻ trên tweet, rồi nhấn Sao chép liên kết."
+        },
+        {
+          "title": "Mở XeetLoot trên Safari",
+          "desc": "Truy cập xeetloot.com, hoặc đơn giản là đổi x.com thành xeetloot.com trên thanh địa chỉ của tab đang mở."
+        },
+        {
+          "title": "Dán và tải xuống",
+          "desc": "Nhấn nút Dán (hoặc nhấn giữ ô nhập và chọn Dán), sau đó nhấn Tải xuống và chọn chất lượng."
+        },
+        {
+          "title": "Tìm file của bạn",
+          "desc": "iOS lưu file vào Files › Downloads. Video còn có tùy chọn “Lưu video” thẳng vào Photos trong menu chia sẻ."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Tôi có cần cài ứng dụng không?",
+            "a": "Không — xeetloot.com hoạt động trực tiếp trên Safari. Không cần cài gì từ App Store."
+          },
+          {
+            "q": "Video đã tải về nằm ở đâu trên iPhone?",
+            "a": "Trong ứng dụng Files, mục Downloads. Video còn có tùy chọn \"Save Video\" lưu thẳng vào Photos."
+          },
+          {
+            "q": "Có hoạt động trên các trình duyệt iPhone khác không?",
+            "a": "Có — Chrome, Firefox và các trình duyệt iOS khác đều hoạt động giống Safari."
+          }
+        ]
+      }
+    },
+    "android": {
+      "title": "Cách tải video Twitter (X) trên Android",
+      "description": "Hướng dẫn từng bước lưu video, GIF và ảnh Twitter (X) trên Android bằng Chrome. Không cần ứng dụng.",
+      "intro": "Hoạt động trên Chrome, Samsung Internet, hoặc bất kỳ trình duyệt Android nào.",
+      "steps": [
+        {
+          "title": "Sao chép liên kết tweet",
+          "desc": "Trong ứng dụng X, nhấn biểu tượng chia sẻ trên tweet và chọn Sao chép liên kết."
+        },
+        {
+          "title": "Mở XeetLoot",
+          "desc": "Mở xeetloot.com trên trình duyệt của bạn, hoặc đổi x.com thành xeetloot.com trên thanh địa chỉ."
+        },
+        {
+          "title": "Dán và tải xuống",
+          "desc": "Nhấn Dán, rồi Tải xuống, sau đó chọn chất lượng."
+        },
+        {
+          "title": "Tìm file của bạn",
+          "desc": "Android lưu file vào thư mục Downloads, và video sẽ tự động xuất hiện trong ứng dụng thư viện ảnh."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Tôi có cần cài ứng dụng không?",
+            "a": "Không — xeetloot.com hoạt động trực tiếp trên Chrome. Không cần cài gì từ Play Store."
+          },
+          {
+            "q": "Video đã tải về nằm ở đâu trên Android?",
+            "a": "Trong thư mục Downloads, và video cũng tự động xuất hiện trong ứng dụng thư viện ảnh."
+          },
+          {
+            "q": "Có hoạt động trên các trình duyệt Android khác không?",
+            "a": "Có — Samsung Internet, Firefox và các trình duyệt Android khác đều hoạt động giống Chrome."
+          }
+        ]
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Chính Sách Bảo Mật",
+      "updated": "Cập nhật lần cuối: 22 tháng 10, 2026",
+      "body": [
+        {
+          "h": "Chúng tôi thu thập gì",
+          "p": "XeetLoot không yêu cầu tài khoản. Khi bạn xử lý một liên kết tweet, chúng tôi tạm thời xử lý URL bạn dán và lưu tạm (cache) các liên kết tải xuống kết quả trong tối đa 24 giờ, để tránh gửi quá nhiều yêu cầu đến máy chủ của X cho cùng một tweet. Chúng tôi không lưu nội dung tweet lâu hơn khoảng thời gian cache đó."
+        },
+        {
+          "h": "Nhật ký và chống lạm dụng",
+          "p": "Như hầu hết các dịch vụ web khác, nhà cung cấp hạ tầng của chúng tôi (Cloudflare) xử lý dữ liệu kết nối (địa chỉ IP, thời điểm yêu cầu) để giới hạn tần suất và ngăn chặn lạm dụng. Chúng tôi không bán dữ liệu này."
+        },
+        {
+          "h": "Cookie",
+          "p": "Chúng tôi dùng một bước xác minh chống bot (Cloudflare Turnstile) trước khi xử lý liên kết, có thể tạo một cookie tồn tại ngắn. Chúng tôi không dùng cookie quảng cáo hay theo dõi của riêng mình."
+        },
+        {
+          "h": "Bên thứ ba",
+          "p": "Các bản tải xuống được phục vụ trực tiếp từ máy chủ của X (video.twimg.com, pbs.twimg.com) — chúng tôi không lưu trữ hay lưu trữ lại file media, ngoại trừ các file đã chuyển đổi tồn tại ngắn (GIF/MP3) sẽ tự động bị xóa trong vòng một giờ."
+        },
+        {
+          "h": "Liên hệ",
+          "p": "Có câu hỏi về chính sách này? Xem trang Liên hệ."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Điều Khoản Dịch Vụ",
+      "updated": "Cập nhật lần cuối: 22 tháng 10, 2026",
+      "body": [
+        {
+          "h": "Dịch vụ",
+          "p": "XeetLoot cho phép bạn tải xuống media công khai từ các bài đăng trên X (Twitter) để sử dụng cá nhân. Chúng tôi không liên kết, không được chứng thực hay tài trợ bởi X Corp."
+        },
+        {
+          "h": "Sử dụng hợp lệ",
+          "p": "Chỉ tải xuống nội dung mà bạn có quyền sử dụng. Không dùng XeetLoot để vi phạm bản quyền, quấy rối, hoặc phân phối lại nội dung của người khác khi chưa được phép. Chúng tôi có quyền chặn lưu lượng truy cập lạm dụng."
+        },
+        {
+          "h": "Không bảo đảm",
+          "p": "Dịch vụ được cung cấp “nguyên trạng”. X có thể thay đổi hệ thống của họ bất cứ lúc nào, điều này có thể làm gián đoạn việc xử lý hoặc tải xuống mà không báo trước. Chúng tôi không đảm bảo thời gian hoạt động hay tính khả dụng."
+        },
+        {
+          "h": "Giới hạn trách nhiệm",
+          "p": "XeetLoot không chịu trách nhiệm về cách nội dung đã tải xuống được sử dụng sau khi rời khỏi dịch vụ của chúng tôi."
+        },
+        {
+          "h": "Thay đổi",
+          "p": "Chúng tôi có thể cập nhật các điều khoản này; việc tiếp tục sử dụng sau một thay đổi nghĩa là bạn đồng ý với cập nhật đó."
+        }
+      ]
+    },
+    "dmca": {
+      "title": "Chính Sách DMCA",
+      "updated": "Cập nhật lần cuối: 22 tháng 10, 2026",
+      "body": [
+        {
+          "h": "Yêu cầu gỡ bỏ",
+          "p": "XeetLoot không lưu trữ hoặc giữ media trong thời gian dài — mỗi bản tải xuống được phục vụ trực tiếp từ máy chủ của X, hoặc là file đã chuyển đổi tồn tại ngắn (1 giờ). Nếu bạn cho rằng tác phẩm có bản quyền của mình đang được cung cấp qua XeetLoot theo cách vi phạm quyền của bạn, hãy liên hệ với chúng tôi kèm theo:"
+        },
+        {
+          "h": "Cần bao gồm những gì",
+          "p": "(1) Mô tả về tác phẩm có bản quyền; (2) URL cụ thể của tweet liên quan; (3) thông tin liên hệ của bạn; (4) một tuyên bố rằng bạn tin với thiện chí rằng việc sử dụng này không được phép; (5) một tuyên bố, chịu trách nhiệm hình sự nếu khai sai, rằng thông tin là chính xác và bạn có quyền hành động."
+        },
+        {
+          "h": "Cách gửi",
+          "p": "Gửi email đến địa chỉ trên trang Liên hệ với dòng chủ đề “DMCA Notice”. Chúng tôi phản hồi nhanh với các thông báo hợp lệ."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Liên Hệ",
+      "intro": "Có câu hỏi, thông báo DMCA, hay gặp lỗi gì đó? Liên hệ chúng tôi tại:",
+      "email": "contact@xeetloot.com",
+      "note": "Chúng tôi đọc tất cả, nhưng vì là một nhóm nhỏ nên không phải lúc nào cũng trả lời được từng tin nhắn."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+services:
+  extractor:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    restart: unless-stopped
+    # Local-only resource guardrails — Cloudflare Containers' own
+    # `instance_type` (set in apps/api/wrangler.toml) governs production
+    # limits instead.
+    mem_limit: 1g
+    cpus: 1.0

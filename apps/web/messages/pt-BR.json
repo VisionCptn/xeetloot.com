@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "siteName": "XeetLoot",
+    "ogDescription": "Baixe vídeos, GIFs, fotos e áudio MP3 do Twitter (X). Gratuito, sem login, sem marca d'água."
+  },
+  "nav": {
+    "mainLabel": "Principal",
+    "video": "Vídeo",
+    "gif": "GIF",
+    "image": "Imagem",
+    "mp3": "MP3",
+    "langLabel": "Português (Brasil)",
+    "langLabelShort": "PT",
+    "langAria": "Idioma: Português (Brasil)",
+    "themeToLight": "Mudar para o tema claro",
+    "themeToDark": "Mudar para o tema escuro",
+    "homeAria": "Início do XeetLoot"
+  },
+  "modes": {
+    "video": {
+      "title": "Baixador de Vídeos do Twitter – Baixe Vídeos do Twitter (X) em HD MP4 | XeetLoot",
+      "description": "Baixador gratuito de vídeos do Twitter (X). Cole o link de um tweet e salve o vídeo em MP4, até 1080p. Sem login, sem marca d'água.",
+      "h1a": "Baixador de ",
+      "h1b": "Vídeo",
+      "h1c": " do Twitter (X)",
+      "sub": "Baixar vídeo do Twitter (X) nunca foi tão fácil: cole o link do tweet e salve o vídeo, o GIF, a foto ou o áudio. Gratuito, sem login.",
+      "howTitle": "Baixe um vídeo do Twitter em 3 passos"
+    },
+    "gif": {
+      "title": "Baixador de GIF do Twitter – Salve GIFs do Twitter (X) como .GIF Real | XeetLoot",
+      "description": "Salve qualquer GIF de um tweet como um arquivo .gif real, ou como um MP4 mais leve. Baixador gratuito de GIF do Twitter (X), sem login.",
+      "h1a": "Baixador de ",
+      "h1b": "GIF",
+      "h1c": " do Twitter (X)",
+      "sub": "Salve qualquer GIF de um tweet como um .gif real, ou como um MP4 mais leve. Gratuito, sem login.",
+      "howTitle": "Baixe um GIF do Twitter em 3 passos"
+    },
+    "image": {
+      "title": "Baixador de Imagens do Twitter – Salve Fotos do Twitter (X) em Tamanho Original | XeetLoot",
+      "description": "Salve todas as fotos de um tweet na qualidade original. Baixador gratuito de imagens do Twitter (X), sem login.",
+      "h1a": "Baixador de ",
+      "h1b": "Imagem",
+      "h1c": " do Twitter (X)",
+      "sub": "Salve todas as fotos de um tweet na qualidade original. Gratuito, sem login.",
+      "howTitle": "Baixe fotos do Twitter em 3 passos"
+    },
+    "mp3": {
+      "title": "Twitter para MP3 – Extraia o Áudio de Vídeos do Twitter (X) | XeetLoot",
+      "description": "Extraia o áudio de qualquer vídeo de um tweet e salve como MP3. Conversor gratuito de Twitter (X) para MP3, sem login.",
+      "h1a": "Do Twitter (X) para ",
+      "h1b": "MP3",
+      "h1c": "",
+      "sub": "Extraia o áudio de qualquer vídeo de um tweet e salve como MP3. Gratuito, sem login.",
+      "howTitle": "Transforme um tweet em MP3 em 3 passos"
+    }
+  },
+  "home": {
+    "fmtNav": "Tipo de download",
+    "inputLabel": "Link do tweet",
+    "placeholder": "Cole o link de um tweet — x.com/… ou twitter.com/…",
+    "paste": "Colar",
+    "download": "Baixar",
+    "clear": "Limpar link",
+    "sample": "Testar um link de exemplo",
+    "trustLabel": "Por que usar o XeetLoot",
+    "chips": [
+      "Gratuito",
+      "Sem login",
+      "Sem marca d'água"
+    ],
+    "toast": "Link colado da área de transferência",
+    "results": "Opções de download",
+    "qualities": "Qualidades",
+    "preview": "Reproduzir prévia",
+    "multiVideos": "{count} vídeos neste tweet",
+    "downloadAllVideos": "Baixar todos ({count})",
+    "photosInTweet": "{count} fotos neste tweet",
+    "origQuality": "Qualidade original",
+    "downloadAllPhotos": "Baixar todas ({count})",
+    "dl": "Baixar",
+    "again": "Baixar outro",
+    "readFaq": "Ler as perguntas frequentes",
+    "loadingTitle": "Pegando o butim do tweet…",
+    "loadingDesc": "Isso geralmente leva alguns segundos.",
+    "ad": "Anúncio",
+    "adAria": "Publicidade",
+    "closeLang": "Fechar seletor de idioma",
+    "howEyebrow": "Como funciona",
+    "step1Title": "Copie o link",
+    "step1Desc": "No tweet, toque em Compartilhar e depois em Copiar link.",
+    "step2Title": "Cole aqui",
+    "step2Desc": "Toque em Colar, ou mantenha o campo pressionado.",
+    "step3Title": "Pegue seu butim",
+    "step3Desc": "Escolha uma qualidade e toque em Baixar.",
+    "featEyebrow": "O que você pode salvar",
+    "featTitle": "Tudo o que está no tweet, a um toque de distância",
+    "feat1Title": "MP4 até 1080p",
+    "feat1Desc": "Todas as qualidades que o tweet oferece, incluindo HD.",
+    "feat2Title": "GIFs como .gif de verdade",
+    "feat2Desc": "O X guarda GIFs como MP4. Nós os transformamos de volta em GIF.",
+    "feat3Title": "Fotos no tamanho original",
+    "feat3Desc": "JPGs em resolução completa, não a prévia comprimida.",
+    "feat4Title": "Áudio em MP3",
+    "feat4Desc": "Só o som, para cortes, podcasts e memes.",
+    "feat5Title": "Tweets com vários vídeos",
+    "feat5Desc": "Vários vídeos ou fotos? Baixe todos de uma vez.",
+    "feat6Title": "x.com e twitter.com",
+    "feat6Desc": "Os dois formatos de link funcionam, inclusive os do celular.",
+    "trickEyebrow": "Atalho",
+    "trickTitle": "O truque da barra de endereço",
+    "trickBody": "Está vendo um tweet no navegador? Troque x.com por xeetloot.com na barra de endereço e aperte Enter. Você cai direto na tela de download.",
+    "trickNote": "Links do twitter.com funcionam do mesmo jeito.",
+    "trickBefore": "Antes",
+    "trickAfter": "Depois",
+    "faqTitle": "Perguntas",
+    "legalTitle": "Jogo limpo",
+    "legalBody": "Baixe apenas o que você tem direito de usar. O XeetLoot não é afiliado à X Corp. Não hospedamos arquivos; os downloads vêm direto dos servidores do X.",
+    "dmcaLink": "DMCA e termos"
+  },
+  "errors": {
+    "unrecognized_url": {
+      "title": "Link não reconhecido",
+      "desc": "Links de tweet têm esse formato: x.com/nome/status/1234567890. Copie com Compartilhar › Copiar link e cole de novo.",
+      "action": "Colar de novo"
+    },
+    "protected_account": {
+      "title": "Esta conta é privada",
+      "desc": "Só seguidores aprovados podem ver esse tweet, então também não conseguimos acessá-lo. Tweets públicos funcionam sem problema.",
+      "action": "Tentar outro link"
+    },
+    "age_restricted": {
+      "title": "Publicação com restrição de idade",
+      "desc": "O X só mostra essa publicação para adultos conectados, então ela não pode ser baixada sem login — e nós nunca pedimos login.",
+      "action": "Tentar outro link"
+    },
+    "spaces_unsupported": {
+      "title": "Spaces não são suportados",
+      "desc": "O áudio do Twitter Spaces precisa de uma sessão em tempo real e com login — não existe um arquivo para baixar.",
+      "action": "Tentar outro link"
+    },
+    "not_found": {
+      "title": "Tweet não encontrado",
+      "desc": "Esse tweet pode ter sido excluído, ou o link está incompleto.",
+      "action": "Tentar outro link"
+    },
+    "rate_limited": {
+      "title": "Muitas solicitações",
+      "desc": "Você atingiu nosso limite de solicitações. Espere um minuto e tente de novo.",
+      "action": "Tentar de novo"
+    },
+    "unavailable": {
+      "title": "Serviço temporariamente indisponível — tente de novo",
+      "desc": "O X está demorando para responder agora. Seu link está certo; tente de novo em um instante.",
+      "action": "Tentar de novo"
+    },
+    "turnstile_failed": {
+      "title": "Falha na verificação",
+      "desc": "Nossa verificação antirrobô não conseguiu confirmar que você é humano. Tente novamente.",
+      "action": "Tentar de novo"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Posso baixar de contas privadas?",
+        "a": "Não. Se só os seguidores de uma conta podem ver um tweet, nós também não conseguimos ver. Apenas tweets públicos."
+      },
+      {
+        "q": "Como eu baixo no iPhone?",
+        "a": "Copie o link do tweet no app do X, abra xeetloot.com no Safari, cole e toque em Baixar. O arquivo vai para Arquivos › Downloads.",
+        "link": "Guia completo para iPhone →",
+        "href": "iphone"
+      },
+      {
+        "q": "E no Android?",
+        "a": "Copie o link, cole aqui no Chrome e toque em Baixar. O vídeo vai para Downloads e aparece na sua galeria.",
+        "link": "Guia completo para Android →",
+        "href": "android"
+      },
+      {
+        "q": "Existe algum limite?",
+        "a": "Não há limite diário nem limite de quantos arquivos você pode salvar. Vídeos muito longos podem levar alguns segundos extras para ficar prontos."
+      },
+      {
+        "q": "Funciona com links do x.com?",
+        "a": "Sim. x.com, twitter.com, mobile.twitter.com e links compartilhados pelo app funcionam todos."
+      },
+      {
+        "q": "Preciso de uma conta?",
+        "a": "Não. Sem cadastro, sem login, sem precisar instalar nenhum app."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Pegue o butim e esqueça o resto. Um baixador gratuito de vídeo, GIF, foto e MP3 do Twitter (X).",
+    "copy": "© 2026 XeetLoot · Não afiliado à X Corp. ou ao Twitter.",
+    "made": "Feito para polegares rápidos.",
+    "toolsGroup": "Ferramentas",
+    "toolVideo": "Baixador de vídeo",
+    "toolGif": "Baixador de GIF",
+    "toolImage": "Baixador de imagens",
+    "toolMp3": "Twitter para MP3",
+    "guidesGroup": "Guias",
+    "guideIos": "No iPhone",
+    "guideAndroid": "No Android",
+    "legalGroup": "Legal",
+    "legalPrivacy": "Privacidade",
+    "legalTerms": "Termos",
+    "legalDmca": "DMCA",
+    "legalContact": "Contato",
+    "sistersGroup": "Sites irmãos",
+    "sisterPinterest": "Baixador de Pinterest"
+  },
+  "langPicker": {
+    "title": "Escolher idioma",
+    "close": "Fechar",
+    "search": "Buscar idiomas",
+    "none": "Nenhum idioma corresponde a isso."
+  },
+  "guides": {
+    "iphone": {
+      "title": "Como baixar vídeos do Twitter (X) no iPhone",
+      "description": "Guia passo a passo para salvar vídeos, GIFs e fotos do Twitter (X) em um iPhone usando o Safari. Sem precisar de app.",
+      "intro": "Sem app, sem login — só o Safari e o app Arquivos que você já tem.",
+      "steps": [
+        {
+          "title": "Copie o link do tweet",
+          "desc": "No app do X ou no Safari, toque no ícone de Compartilhar no tweet e depois toque em Copiar link."
+        },
+        {
+          "title": "Abra o XeetLoot no Safari",
+          "desc": "Acesse xeetloot.com, ou simplesmente troque x.com por xeetloot.com na barra de endereço da aba que você já tem aberta."
+        },
+        {
+          "title": "Cole e baixe",
+          "desc": "Toque no botão Colar (ou mantenha pressionado o campo e escolha Colar), depois toque em Baixar e escolha uma qualidade."
+        },
+        {
+          "title": "Encontre seu arquivo",
+          "desc": "O iOS salva em Arquivos › Downloads. Vídeos também oferecem a opção “Salvar Vídeo” direto para Fotos no menu de compartilhamento."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Preciso instalar algum aplicativo?",
+            "a": "Não — o xeetloot.com funciona direto no Safari. Não há nada para instalar na App Store."
+          },
+          {
+            "q": "Para onde vão os vídeos baixados no iPhone?",
+            "a": "Para o app Arquivos, na pasta Downloads. Os vídeos também têm a opção \"Salvar Vídeo\" direto para o álbum de Fotos."
+          },
+          {
+            "q": "Funciona em outros navegadores do iPhone também?",
+            "a": "Sim — Chrome, Firefox e qualquer outro navegador do iOS funcionam da mesma forma que o Safari."
+          }
+        ]
+      }
+    },
+    "android": {
+      "title": "Como baixar vídeos do Twitter (X) no Android",
+      "description": "Guia passo a passo para salvar vídeos, GIFs e fotos do Twitter (X) no Android usando o Chrome. Sem precisar de app.",
+      "intro": "Funciona no Chrome, no Samsung Internet ou em qualquer navegador para Android.",
+      "steps": [
+        {
+          "title": "Copie o link do tweet",
+          "desc": "No app do X, toque no ícone de compartilhar no tweet e escolha Copiar link."
+        },
+        {
+          "title": "Abra o XeetLoot",
+          "desc": "Abra xeetloot.com no seu navegador, ou troque x.com por xeetloot.com na barra de endereço."
+        },
+        {
+          "title": "Cole e baixe",
+          "desc": "Toque em Colar, depois em Baixar, e escolha uma qualidade."
+        },
+        {
+          "title": "Encontre seu arquivo",
+          "desc": "O Android salva na sua pasta de Downloads, e os vídeos aparecem automaticamente no app de galeria."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Preciso instalar algum aplicativo?",
+            "a": "Não — o xeetloot.com funciona direto no Chrome. Não há nada para instalar na Play Store."
+          },
+          {
+            "q": "Para onde vão os vídeos baixados no Android?",
+            "a": "Para a pasta Downloads, e os vídeos também aparecem automaticamente no app de galeria."
+          },
+          {
+            "q": "Funciona em outros navegadores do Android também?",
+            "a": "Sim — Samsung Internet, Firefox e qualquer outro navegador Android funcionam da mesma forma que o Chrome."
+          }
+        ]
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de Privacidade",
+      "updated": "Última atualização: 22 de outubro de 2026",
+      "body": [
+        {
+          "h": "O que coletamos",
+          "p": "O XeetLoot não exige conta. Quando você resolve o link de um tweet, processamos temporariamente a URL colada e guardamos em cache os links de download resultantes por até 24 horas, para não sobrecarregar os servidores do X com o mesmo tweet duas vezes. Não armazenamos o conteúdo do tweet além dessa janela de cache."
+        },
+        {
+          "h": "Logs e prevenção de abuso",
+          "p": "Como a maioria dos serviços web, nosso provedor de infraestrutura (Cloudflare) processa metadados de conexão (endereço IP, tempos de requisição) para aplicar limites de taxa e impedir abusos. Não vendemos esses dados."
+        },
+        {
+          "h": "Cookies",
+          "p": "Usamos uma verificação anti-robô (Cloudflare Turnstile) antes de resolver um link, que pode definir um cookie de curta duração. Não usamos cookies de publicidade ou rastreamento próprios."
+        },
+        {
+          "h": "Terceiros",
+          "p": "Os downloads são servidos diretamente pelos próprios servidores do X (video.twimg.com, pbs.twimg.com) — não hospedamos nem re-hospedamos arquivos de mídia, exceto arquivos convertidos de curta duração (GIF/MP3), que são excluídos automaticamente em até uma hora."
+        },
+        {
+          "h": "Contato",
+          "p": "Dúvidas sobre esta política? Veja a página de Contato."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Termos de Serviço",
+      "updated": "Última atualização: 22 de outubro de 2026",
+      "body": [
+        {
+          "h": "O serviço",
+          "p": "O XeetLoot permite baixar mídia publicamente disponível de publicações do X (Twitter) para uso pessoal. Não somos afiliados, endossados ou patrocinados pela X Corp."
+        },
+        {
+          "h": "Uso aceitável",
+          "p": "Baixe apenas conteúdo que você tem direito de usar. Não use o XeetLoot para infringir direitos autorais, assediar ou redistribuir conteúdo de outra pessoa sem permissão. Reservamo-nos o direito de bloquear tráfego abusivo."
+        },
+        {
+          "h": "Sem garantia",
+          "p": "O serviço é fornecido “como está”. O X pode alterar seus sistemas a qualquer momento, o que pode interromper a resolução ou o download sem aviso. Não garantimos disponibilidade ou tempo de atividade."
+        },
+        {
+          "h": "Limitação de responsabilidade",
+          "p": "O XeetLoot não é responsável pelo uso do conteúdo baixado depois que ele sai do nosso serviço."
+        },
+        {
+          "h": "Alterações",
+          "p": "Podemos atualizar estes termos; o uso continuado após uma alteração significa que você aceita a atualização."
+        }
+      ]
+    },
+    "dmca": {
+      "title": "Política de DMCA",
+      "updated": "Última atualização: 22 de outubro de 2026",
+      "body": [
+        {
+          "h": "Solicitações de remoção",
+          "p": "O XeetLoot não hospeda nem armazena mídia a longo prazo — cada download é servido diretamente pelos servidores do X, ou é um arquivo convertido de curta duração (1 hora). Se você acredita que sua obra protegida por direitos autorais está disponível através do XeetLoot de uma forma que viola seus direitos, entre em contato com:"
+        },
+        {
+          "h": "O que incluir",
+          "p": "(1) Uma descrição da obra protegida; (2) a(s) URL(s) específica(s) do(s) tweet(s) envolvido(s); (3) suas informações de contato; (4) uma declaração de que você acredita de boa-fé que o uso não é autorizado; (5) uma declaração, sob pena de perjúrio, de que as informações são precisas e que você está autorizado a agir."
+        },
+        {
+          "h": "Como enviar",
+          "p": "Envie um e-mail para o endereço na página de Contato com o assunto “DMCA Notice”. Respondemos prontamente a notificações válidas."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contato",
+      "intro": "Dúvidas, avisos de DMCA, ou algo não está funcionando? Fale com a gente em:",
+      "email": "contact@xeetloot.com",
+      "note": "Lemos tudo, mas, como um time pequeno, nem sempre conseguimos responder individualmente a cada mensagem."
+    }
+  }
+}

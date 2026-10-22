@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="dark"] {
+  --bg: #0d0f0c;
+  --sf: #161a14;
+  --sf2: #20251d;
+  --sk: #2e3529;
+  --bd: #30372b;
+  --bd-strong: #646e59;
+  --tx: #f1f5ea;
+  --tx2: #a6af9c;
+  --ac: #c6ff3d;
+  --on-ac: #0d0f0c;
+  --ac-tx: #c6ff3d;
+  --ac-bd: #c6ff3d;
+  --ac-sh: #6f9a14;
+  --dng: #ff8a75;
+  --dng-bg: #2b1612;
+  --inv: #f1f5ea;
+  --on-inv: #0d0f0c;
+  --scrim: rgba(0, 0, 0, 0.62);
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.04), 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="light"] {
+  --bg: #f5f6f0;
+  --sf: #ffffff;
+  --sf2: #ebeee3;
+  --sk: #f8faf3;
+  --bd: #cdd3c3;
+  --bd-strong: #7d8672;
+  --tx: #11140f;
+  --tx2: #4a5243;
+  --ac: #c6ff3d;
+  --on-ac: #0d0f0c;
+  --ac-tx: #3b6300;
+  --ac-bd: #11140f;
+  --ac-sh: #11140f;
+  --dng: #b42318;
+  --dng-bg: #fdecea;
+  --inv: #11140f;
+  --on-inv: #f5f6f0;
+  --scrim: rgba(17, 20, 15, 0.45);
+  --shadow: 0 1px 2px rgba(17, 20, 15, 0.06), 0 12px 32px rgba(17, 20, 15, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--tx);
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Noto Sans",
+    "Noto Sans Arabic",
+    "Noto Sans Thai",
+    "Noto Sans JP",
+    "Noto Sans KR",
+    "Noto Sans Devanagari",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ac);
+  outline-offset: 2px;
+}
+
+.xl-field:focus-within {
+  outline: 3px solid var(--ac);
+  outline-offset: 2px;
+}
+
+.xl-field input:focus {
+  outline: none;
+}
+
+.xl-cta:active {
+  transform: translateY(3px);
+  box-shadow: none !important;
+}
+
+@keyframes xl-shim {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes xl-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes xl-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(4deg);
+  }
+}
+
+.xl-shimmer {
+  background: linear-gradient(90deg, var(--sf2) 0%, var(--sk) 50%, var(--sf2) 100%);
+  background-size: 200% 100%;
+  animation: xl-shim 1.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

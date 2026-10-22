@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "xeetloot-web",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-10-22",
+  "compatibility_flags": ["nodejs_compat"],
+  "routes": [
+    { "pattern": "xeetloot.com", "custom_domain": true },
+    { "pattern": "www.xeetloot.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "images": {
+    "binding": "IMAGES"
+  },
+  "services": [
+    { "binding": "WORKER_SELF_REFERENCE", "service": "xeetloot-web" },
+    // The only way route handlers reach the backend — never EXTRACTOR_URL
+    // or anything extractor-shaped, which must stay unreachable from the
+    // browser. See lib/api-client.ts.
+    { "binding": "API", "service": "loot-api" }
+  ],
+  "vars": {
+    // Client-side NEXT_PUBLIC_* vars are inlined at build time, not read
+    // from here — these are just for server-side code reading the same
+    // names at runtime. Set the real values as actual shell/CI env vars
+    // before `pnpm build` in production. See README.md.
+    "NEXT_PUBLIC_ADS_PROVIDER": "none",
+    "NEXT_PUBLIC_API_BASE_URL": "https://api.xeetloot.com",
+    "NEXT_PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAAFhXAD59xFGTDKgc",
+    "NEXT_PUBLIC_GA_ID": "G-84MWFE6WVC",
+    "NEXT_PUBLIC_CLARITY_ID": "z1x54hu3n4"
+  }
+}

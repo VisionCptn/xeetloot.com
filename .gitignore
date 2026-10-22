@@ -1,0 +1,40 @@
+node_modules/
+.DS_Store
+
+# build output
+dist/
+.next/
+.turbo/
+.vinext/
+.cloudflare/
+
+# wrangler / cloudflare
+.wrangler/
+.dev.vars
+.open-next/
+cloudflare-env.d.ts
+
+# env files — .dev.vars (above) feeds wrangler/getCloudflareContext().env;
+# these feed `next dev`'s own process.env (separate mechanism, see
+# apps/web/README.md)
+.env
+.env.local
+.env.*.local
+
+# next.js
+.next/
+next-env.d.ts
+
+# playwright
+playwright-report/
+blob-report/
+*.tsbuildinfo
+
+# test output
+test-results/
+playwright-report/
+
+# python
+__pycache__/
+*.pyc
+.venv/

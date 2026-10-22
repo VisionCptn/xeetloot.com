@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-typecheck-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright browsers
+        run: pnpm --filter @xeetloot/web exec playwright install --with-deps chromium
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Check translations
+        run: pnpm --filter @xeetloot/web check-translations
+
+      - name: Test
+        run: pnpm test
+
+  extractor-image:
+    runs-on: ubuntu-latest
+    # Build-only sanity check — Cloudflare builds and uploads the real
+    # deployed image itself as part of `wrangler deploy` (see deploy.yml),
+    # so there's nothing to push here. This just catches a broken
+    # Dockerfile/requirements.txt before it reaches main.
+    steps:
+      - uses: actions/checkout@v5
+      - uses: docker/setup-buildx-action@v3
+      - name: Build extractor image
+        uses: docker/build-push-action@v6
+        with:
+          context: apps/extractor
+          push: false

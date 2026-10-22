@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "siteName": "XeetLoot",
+    "ogDescription": "Twitter (X) videolarını, GIF'lerini, fotoğraflarını ve MP3 seslerini indirin. Ücretsiz, üyelik gerektirmez, filigran yok."
+  },
+  "nav": {
+    "mainLabel": "Ana menü",
+    "video": "Video",
+    "gif": "GIF",
+    "image": "Görsel",
+    "mp3": "MP3",
+    "langLabel": "Türkçe",
+    "langLabelShort": "TR",
+    "langAria": "Dil: Türkçe",
+    "themeToLight": "Açık temaya geç",
+    "themeToDark": "Koyu temaya geç",
+    "homeAria": "XeetLoot ana sayfa"
+  },
+  "modes": {
+    "video": {
+      "title": "Twitter Video İndirici – Twitter (X) Videolarını HD MP4 Olarak İndirin | XeetLoot",
+      "description": "Ücretsiz Twitter (X) video indirici. Bir tweet bağlantısı yapıştırın, videoyu MP4 olarak, 1080p'ye kadar kaydedin. Üyelik yok, filigran yok.",
+      "h1a": "Twitter (X) ",
+      "h1b": "Video",
+      "h1c": " İndirici",
+      "sub": "Bir tweet bağlantısı yapıştırın; videoyu, GIF'i, fotoğrafı veya sesi kaydedin. Ücretsiz, üyelik gerektirmez.",
+      "howTitle": "Twitter videosunu 3 adımda indirin"
+    },
+    "gif": {
+      "title": "Twitter GIF İndirici – Twitter (X) GIF'lerini Gerçek .GIF Olarak Kaydedin | XeetLoot",
+      "description": "Bir tweetteki GIF'i gerçek bir .gif dosyası olarak, ya da daha hafif bir MP4 olarak kaydedin. Ücretsiz Twitter (X) GIF indirici, üyelik gerektirmez.",
+      "h1a": "Twitter (X) ",
+      "h1b": "GIF",
+      "h1c": " İndirici",
+      "sub": "Bir tweetteki GIF'i gerçek bir .gif olarak, ya da daha hafif bir MP4 olarak kaydedin. Ücretsiz, üyelik gerektirmez.",
+      "howTitle": "Twitter GIF'ini 3 adımda indirin"
+    },
+    "image": {
+      "title": "Twitter Görsel İndirici – Twitter (X) Fotoğraflarını Orijinal Boyutta Kaydedin | XeetLoot",
+      "description": "Bir tweetteki tüm fotoğrafları orijinal kalitesiyle kaydedin. Ücretsiz Twitter (X) görsel indirici, üyelik gerektirmez.",
+      "h1a": "Twitter (X) ",
+      "h1b": "Görsel",
+      "h1c": " İndirici",
+      "sub": "Bir tweetteki tüm fotoğrafları orijinal kalitesiyle kaydedin. Ücretsiz, üyelik gerektirmez.",
+      "howTitle": "Twitter fotoğraflarını 3 adımda indirin"
+    },
+    "mp3": {
+      "title": "Twitter'dan MP3'e – Twitter (X) Videolarından Ses Çıkarın | XeetLoot",
+      "description": "Herhangi bir tweet videosundan sesi çıkarıp MP3 olarak kaydedin. Ücretsiz Twitter (X) - MP3 dönüştürücü, üyelik gerektirmez.",
+      "h1a": "Twitter (X)'ten ",
+      "h1b": "MP3'e",
+      "h1c": "",
+      "sub": "Herhangi bir tweet videosundan sesi çıkarıp MP3 olarak kaydedin. Ücretsiz, üyelik gerektirmez.",
+      "howTitle": "Bir tweeti 3 adımda MP3'e çevirin"
+    }
+  },
+  "home": {
+    "fmtNav": "İndirme türü",
+    "inputLabel": "Tweet bağlantısı",
+    "placeholder": "Bir tweet bağlantısı yapıştırın — x.com/… veya twitter.com/…",
+    "paste": "Yapıştır",
+    "download": "İndir",
+    "clear": "Bağlantıyı temizle",
+    "sample": "Örnek bir bağlantı dene",
+    "trustLabel": "Neden XeetLoot",
+    "chips": [
+      "Ücretsiz",
+      "Üyelik yok",
+      "Filigran yok"
+    ],
+    "toast": "Bağlantı panodan yapıştırıldı",
+    "results": "İndirme seçenekleri",
+    "qualities": "Kaliteler",
+    "preview": "Önizlemeyi oynat",
+    "multiVideos": "Bu tweette {count} video var",
+    "downloadAllVideos": "Tümünü indir ({count})",
+    "photosInTweet": "Bu tweette {count} fotoğraf var",
+    "origQuality": "Orijinal kalite",
+    "downloadAllPhotos": "Tümünü indir ({count})",
+    "dl": "İndir",
+    "again": "Başka bir dosya indir",
+    "readFaq": "Sık sorulanları oku",
+    "loadingTitle": "Tweetten ganimet toplanıyor…",
+    "loadingDesc": "Bu genellikle birkaç saniye sürer.",
+    "ad": "Reklam",
+    "adAria": "Reklam",
+    "closeLang": "Dil seçiciyi kapat",
+    "howEyebrow": "Nasıl çalışır",
+    "step1Title": "Bağlantıyı kopyala",
+    "step1Desc": "Tweette Paylaş'a, ardından Bağlantıyı kopyala'ya dokun.",
+    "step2Title": "Buraya yapıştır",
+    "step2Desc": "Yapıştır'a dokun, ya da kutuya basılı tut.",
+    "step3Title": "Ganimetini al",
+    "step3Desc": "Bir kalite seç ve İndir'e dokun.",
+    "featEyebrow": "Ne kaydedebilirsin",
+    "featTitle": "Tweetteki her şey tek dokunuşla",
+    "feat1Title": "1080p'ye kadar MP4",
+    "feat1Desc": "Tweetin sunduğu her kalite, HD dahil.",
+    "feat2Title": "GIF'ler gerçek .gif olarak",
+    "feat2Desc": "X, GIF'leri MP4 olarak saklar. Biz onları tekrar GIF'e çeviriyoruz.",
+    "feat3Title": "Fotoğraflar orijinal boyutta",
+    "feat3Desc": "Sıkıştırılmış önizleme değil, tam çözünürlüklü JPG.",
+    "feat4Title": "MP3 ses",
+    "feat4Desc": "Klipler, podcast'ler ve meme'ler için sadece ses.",
+    "feat5Title": "Çok videolu tweetler",
+    "feat5Desc": "Birden fazla video veya fotoğraf mı var? Hepsini tek seferde al.",
+    "feat6Title": "x.com ve twitter.com",
+    "feat6Desc": "Her iki bağlantı biçimi de çalışır, mobil bağlantılar da dahil.",
+    "trickEyebrow": "Kısayol",
+    "trickTitle": "Adres çubuğu hilesi",
+    "trickBody": "Tarayıcında bir tweet mi izliyorsun? Adres çubuğunda x.com'u xeetloot.com ile değiştir ve Enter'a bas. Doğrudan indirme ekranına inersin.",
+    "trickNote": "twitter.com bağlantıları da aynı şekilde çalışır.",
+    "trickBefore": "Önce",
+    "trickAfter": "Sonra",
+    "faqTitle": "Sorular",
+    "legalTitle": "Dürüst kullanım",
+    "legalBody": "Yalnızca kullanma hakkın olan içerikleri indir. XeetLoot, X Corp. ile bağlantılı değildir. Dosyaları biz barındırmıyoruz; indirmeler doğrudan X'in sunucularından gelir.",
+    "dmcaLink": "DMCA ve koşullar"
+  },
+  "errors": {
+    "unrecognized_url": {
+      "title": "Bağlantı tanınmadı",
+      "desc": "Tweet bağlantıları şu şekilde görünür: x.com/kullaniciadi/status/1234567890. Paylaş › Bağlantıyı kopyala ile kopyalayıp tekrar yapıştır.",
+      "action": "Tekrar yapıştır"
+    },
+    "protected_account": {
+      "title": "Bu hesap gizli",
+      "desc": "Bu tweeti yalnızca onaylı takipçiler görebiliyor, yani biz de erişemiyoruz. Herkese açık tweetler sorunsuz çalışır.",
+      "action": "Başka bir bağlantı dene"
+    },
+    "age_restricted": {
+      "title": "Yaş sınırlaması olan paylaşım",
+      "desc": "X bu paylaşımı yalnızca oturum açmış yetişkinlere gösteriyor, bu yüzden oturum açmadan indirilemiyor — ve biz senden asla oturum açmanı istemeyiz.",
+      "action": "Başka bir bağlantı dene"
+    },
+    "spaces_unsupported": {
+      "title": "Spaces desteklenmiyor",
+      "desc": "Twitter Spaces sesi, canlı ve oturum açılmış bir bağlantı gerektirir — indirilecek bir dosya yok.",
+      "action": "Başka bir bağlantı dene"
+    },
+    "not_found": {
+      "title": "Tweet bulunamadı",
+      "desc": "Bu tweet silinmiş olabilir, ya da bağlantı eksik.",
+      "action": "Başka bir bağlantı dene"
+    },
+    "rate_limited": {
+      "title": "Çok fazla istek",
+      "desc": "İstek limitine ulaştın. Bir dakika bekleyip tekrar dene.",
+      "action": "Tekrar dene"
+    },
+    "unavailable": {
+      "title": "Hizmet şu anda kullanılamıyor — tekrar dene",
+      "desc": "X şu anda yanıt vermekte yavaş. Bağlantın sorunsuz; biraz sonra tekrar dene.",
+      "action": "Tekrar dene"
+    },
+    "turnstile_failed": {
+      "title": "Doğrulama başarısız oldu",
+      "desc": "Bot kontrolümüz insan olduğunuzu onaylayamadı. Tekrar deneyin.",
+      "action": "Tekrar dene"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Gizli hesaplardan indirebilir miyim?",
+        "a": "Hayır. Bir tweeti yalnızca o hesabın takipçileri görebiliyorsa, biz de göremeyiz. Sadece herkese açık tweetler."
+      },
+      {
+        "q": "iPhone'da nasıl indiririm?",
+        "a": "X uygulamasında tweet bağlantısını kopyala, Safari'de xeetloot.com'u aç, yapıştır ve İndir'e dokun. Dosya Dosyalar › İndirilenler klasörüne gider.",
+        "link": "Tam iPhone kılavuzu →",
+        "href": "iphone"
+      },
+      {
+        "q": "Android'de nasıl?",
+        "a": "Bağlantıyı kopyala, Chrome'da buraya yapıştır ve İndir'e dokun. Video İndirilenler klasörüne gider ve galerinde görünür.",
+        "link": "Tam Android kılavuzu →",
+        "href": "android"
+      },
+      {
+        "q": "Bir limit var mı?",
+        "a": "Günlük limit yok, kaydedebileceğin dosya sayısında sınır yok. Çok uzun videolar hazırlanırken birkaç saniye daha sürebilir."
+      },
+      {
+        "q": "x.com bağlantılarıyla çalışıyor mu?",
+        "a": "Evet. x.com, twitter.com, mobile.twitter.com ve uygulamadan paylaşılan bağlantıların hepsi çalışır."
+      },
+      {
+        "q": "Hesap gerekiyor mu?",
+        "a": "Hayır. Kayıt yok, giriş yok, kurulacak bir uygulama yok."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Ganimeti al, gerisini bırak. Ücretsiz bir Twitter (X) video, GIF, fotoğraf ve MP3 indirici.",
+    "copy": "© 2026 XeetLoot · X Corp. veya Twitter ile bağlantılı değildir.",
+    "made": "Hızlı parmaklar için yapıldı.",
+    "toolsGroup": "Araçlar",
+    "toolVideo": "Video indirici",
+    "toolGif": "GIF indirici",
+    "toolImage": "Görsel indirici",
+    "toolMp3": "Twitter'dan MP3'e",
+    "guidesGroup": "Kılavuzlar",
+    "guideIos": "iPhone'da",
+    "guideAndroid": "Android'de",
+    "legalGroup": "Yasal",
+    "legalPrivacy": "Gizlilik",
+    "legalTerms": "Koşullar",
+    "legalDmca": "DMCA",
+    "legalContact": "İletişim",
+    "sistersGroup": "Kardeş siteler",
+    "sisterPinterest": "Pinterest indirici"
+  },
+  "langPicker": {
+    "title": "Dil seç",
+    "close": "Kapat",
+    "search": "Dil ara",
+    "none": "Buna uyan bir dil yok."
+  },
+  "guides": {
+    "iphone": {
+      "title": "iPhone'da Twitter (X) videoları nasıl indirilir",
+      "description": "Safari kullanarak iPhone'da Twitter (X) videolarını, GIF'lerini ve fotoğraflarını kaydetme kılavuzu. Uygulama gerekmez.",
+      "intro": "Uygulama yok, üyelik yok — sadece Safari ve zaten sahip olduğun Dosyalar uygulaması.",
+      "steps": [
+        {
+          "title": "Tweet bağlantısını kopyala",
+          "desc": "X uygulamasında veya Safari'de tweetteki Paylaş simgesine dokun, ardından Bağlantıyı kopyala'ya dokun."
+        },
+        {
+          "title": "Safari'de XeetLoot'u aç",
+          "desc": "xeetloot.com'a git, ya da zaten açık olan sekmenin adres çubuğunda x.com'u xeetloot.com ile değiştir."
+        },
+        {
+          "title": "Yapıştır ve indir",
+          "desc": "Yapıştır düğmesine dokun (veya kutuya basılı tutup Yapıştır'ı seç), sonra İndir'e dokunup bir kalite seç."
+        },
+        {
+          "title": "Dosyanı bul",
+          "desc": "iOS onu Dosyalar › İndirilenler klasörüne kaydeder. Videolar için paylaşım menüsünde doğrudan Fotoğraflar'a kaydetme seçeneği de vardır."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Bir uygulama yüklemem gerekiyor mu?",
+            "a": "Hayır — xeetloot.com doğrudan Safari'de çalışır. App Store'dan indirilecek bir şey yok."
+          },
+          {
+            "q": "İndirilen videolar iPhone'da nereye gidiyor?",
+            "a": "Dosyalar uygulamasına, İndirilenler klasörüne. Videolar için doğrudan Fotoğraflar'a \"Videoyu Kaydet\" seçeneği de vardır."
+          },
+          {
+            "q": "Bu diğer iPhone tarayıcılarında da çalışır mı?",
+            "a": "Evet — Chrome, Firefox ve diğer tüm iOS tarayıcıları Safari ile aynı şekilde çalışır."
+          }
+        ]
+      }
+    },
+    "android": {
+      "title": "Android'de Twitter (X) videoları nasıl indirilir",
+      "description": "Chrome kullanarak Android'de Twitter (X) videolarını, GIF'lerini ve fotoğraflarını kaydetme kılavuzu. Uygulama gerekmez.",
+      "intro": "Chrome, Samsung Internet veya herhangi bir Android tarayıcısında çalışır.",
+      "steps": [
+        {
+          "title": "Tweet bağlantısını kopyala",
+          "desc": "X uygulamasında tweetteki paylaş simgesine dokun ve Bağlantıyı kopyala'yı seç."
+        },
+        {
+          "title": "XeetLoot'u aç",
+          "desc": "Tarayıcında xeetloot.com'u aç, ya da adres çubuğunda x.com'u xeetloot.com ile değiştir."
+        },
+        {
+          "title": "Yapıştır ve indir",
+          "desc": "Yapıştır'a, sonra İndir'e dokun ve bir kalite seç."
+        },
+        {
+          "title": "Dosyanı bul",
+          "desc": "Android onu İndirilenler klasörüne kaydeder, videolar otomatik olarak galeri uygulamanda görünür."
+        }
+      ],
+      "faq": {
+        "items": [
+          {
+            "q": "Bir uygulama yüklemem gerekiyor mu?",
+            "a": "Hayır — xeetloot.com doğrudan Chrome'da çalışır. Play Store'dan indirilecek bir şey yok."
+          },
+          {
+            "q": "İndirilen videolar Android'de nereye gidiyor?",
+            "a": "İndirilenler klasörüne, videolar ayrıca otomatik olarak galeri uygulamanda da görünür."
+          },
+          {
+            "q": "Bu diğer Android tarayıcılarında da çalışır mı?",
+            "a": "Evet — Samsung Internet, Firefox ve diğer tüm Android tarayıcıları Chrome ile aynı şekilde çalışır."
+          }
+        ]
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "updated": "Son güncelleme: 22 Ekim 2026",
+      "body": [
+        {
+          "h": "Ne topluyoruz",
+          "p": "XeetLoot hesap gerektirmez. Bir tweet bağlantısını çözümlediğinde, yapıştırdığın URL'yi geçici olarak işleriz ve aynı tweeti iki kez X sunucularına yüklememek için ortaya çıkan indirme bağlantılarını en fazla 24 saat önbellekte tutarız. Tweet içeriğini bu önbellek süresinden daha uzun saklamayız."
+        },
+        {
+          "h": "Günlükler ve kötüye kullanımı önleme",
+          "p": "Çoğu web hizmeti gibi, altyapı sağlayıcımız (Cloudflare) hız sınırlama ve kötüye kullanımı önleme amacıyla bağlantı meta verilerini (IP adresi, istek zamanlaması) işler. Bu verileri satmayız."
+        },
+        {
+          "h": "Çerezler",
+          "p": "Bir bağlantıyı çözümlemeden önce bot doğrulaması (Cloudflare Turnstile) kullanırız; bu kısa ömürlü bir çerez oluşturabilir. Kendi reklam veya takip çerezlerimiz yoktur."
+        },
+        {
+          "h": "Üçüncü taraflar",
+          "p": "İndirmeler doğrudan X'in kendi sunucularından (video.twimg.com, pbs.twimg.com) sunulur — medya dosyalarını barındırmayız, kısa ömürlü (1 saat içinde otomatik silinen) dönüştürülmüş GIF/MP3 dosyaları hariç."
+        },
+        {
+          "h": "İletişim",
+          "p": "Bu politikayla ilgili sorular mı var? İletişim sayfasına bak."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Kullanım Koşulları",
+      "updated": "Son güncelleme: 22 Ekim 2026",
+      "body": [
+        {
+          "h": "Hizmet",
+          "p": "XeetLoot, X'teki (Twitter) herkese açık paylaşımlardan kişisel kullanım için medya indirmene izin verir. X Corp. ile bağlantılı, onun tarafından onaylanmış veya desteklenmiş değiliz."
+        },
+        {
+          "h": "Kabul edilebilir kullanım",
+          "p": "Yalnızca kullanma hakkın olan içerikleri indir. XeetLoot'u telif hakkı ihlali, taciz veya izinsiz içerik dağıtımı için kullanma. Kötüye kullanılan trafiği engelleme hakkımızı saklı tutarız."
+        },
+        {
+          "h": "Garanti yok",
+          "p": "Hizmet “olduğu gibi” sunulur. X, sistemlerini her an değiştirebilir; bu, bildirimde bulunmadan çözümlemeyi veya indirmeyi bozabilir. Kesintisizlik veya kullanılabilirlik garanti etmiyoruz."
+        },
+        {
+          "h": "Sorumluluğun sınırlandırılması",
+          "p": "XeetLoot, indirilen içeriğin hizmetimizden ayrıldıktan sonra nasıl kullanıldığından sorumlu değildir."
+        },
+        {
+          "h": "Değişiklikler",
+          "p": "Bu koşulları güncelleyebiliriz; bir değişiklikten sonra kullanmayı sürdürmen güncellemeyi kabul ettiğin anlamına gelir."
+        }
+      ]
+    },
+    "dmca": {
+      "title": "DMCA Politikası",
+      "updated": "Son güncelleme: 22 Ekim 2026",
+      "body": [
+        {
+          "h": "Kaldırma talepleri",
+          "p": "XeetLoot medyayı uzun süre barındırmaz veya saklamaz — her indirme doğrudan X'in sunucularından sunulur, ya da kısa ömürlü (1 saat) dönüştürülmüş bir dosyadır. Telif hakkıyla korunan eserinin XeetLoot aracılığıyla haklarını ihlal eden bir şekilde sunulduğunu düşünüyorsan, şunlarla bize ulaş:"
+        },
+        {
+          "h": "Neler eklenmeli",
+          "p": "(1) Telif hakkıyla korunan eserin açıklaması; (2) ilgili tweet URL'leri; (3) iletişim bilgilerin; (4) kullanımın izinsiz olduğuna iyi niyetle inandığına dair bir beyan; (5) bilgilerin doğru olduğuna ve bu adına hareket etme yetkine sahip olduğuna dair, yalan beyanın cezai sonuçları olacağını kabul ederek yapılmış bir beyan."
+        },
+        {
+          "h": "Nasıl gönderilir",
+          "p": "İletişim sayfasındaki adrese “DMCA Notice” konu başlığıyla e-posta gönder. Geçerli bildirimlere hızlıca yanıt veririz."
+        }
+      ]
+    },
+    "contact": {
+      "title": "İletişim",
+      "intro": "Sorular, DMCA bildirimleri ya da bozuk bir şey mi var? Bize şuradan ulaş:",
+      "email": "contact@xeetloot.com",
+      "note": "Her şeyi okuyoruz, ama küçük bir ekip olduğumuz için her mesaja tek tek yanıt veremeyebiliriz."
+    }
+  }
+}
