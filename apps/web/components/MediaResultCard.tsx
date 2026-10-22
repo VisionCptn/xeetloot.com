@@ -203,16 +203,6 @@ function PhotoCard({ media }: { media: ResolvedMedia }) {
                 ) : (
                   <IconGrid width={28} height={28} />
                 )}
-                {v?.downloadUrl && (
-                  <a
-                    href={toApiUrl(v.downloadUrl)}
-                    download
-                    aria-label={`${t("dl")} ${i + 1}`}
-                    className="absolute end-1.5 bottom-1.5 flex h-11 w-11 items-center justify-center rounded-xl bg-black/80 text-white"
-                  >
-                    <IconDownload width={18} height={18} />
-                  </a>
-                )}
               </div>
               <figcaption className="text-start text-xs text-[var(--tx2)]">
                 {p.width && p.height ? `${p.width}×${p.height}` : null}
@@ -221,6 +211,26 @@ function PhotoCard({ media }: { media: ResolvedMedia }) {
           );
         })}
       </div>
+
+      <ul className="m-0 list-none p-0">
+        {photos.map((p, i) => {
+          const v = p.variants[0];
+          if (!v?.downloadUrl) return null;
+          return (
+            <QualityRow
+              key={i}
+              label={photos.length > 1 ? `${t("dl")} ${i + 1}` : t("dl")}
+              meta={p.width && p.height ? `JPG · ${p.width}×${p.height}` : "JPG"}
+              action={
+                <a href={toApiUrl(v.downloadUrl)} download className={ROW_CTA_CLASS}>
+                  <IconDownload width={18} height={18} />
+                  <span>{t("dl")}</span>
+                </a>
+              }
+            />
+          );
+        })}
+      </ul>
     </article>
   );
 }
